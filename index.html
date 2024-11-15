@@ -17,12 +17,15 @@
     <script>
         let edad = 25;
 
-        if(edad >= 18){
-            document.write("Usted es mayor de edad !");
-            console.log('ingreso mayor:', edad);
+        if(edad > 18){
+            document.write("Presentar Cedula !");
+            console.log('ingreso cedula:', edad);
+        }else if(edad == 18){
+            document.write("Presentar contraseña !");
+            console.log('ingreso contraseña:', edad);
         }else{
-            document.write("Usted es menor de edad !");
-            console.log('ingreso menor:', edad);
+            document.write("No puede ingresar !");
+            console.log('no ingreso :', edad);
         }
     </script>
 
