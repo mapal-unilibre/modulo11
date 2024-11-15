@@ -15,18 +15,30 @@
     <p>Ejercicio resuelto 2</p>
 
     <script>
-        let edad = 25;
+        /**
+         * Se debe registrar la edad del estudiante
+         * Para saber si se requiere solicitar
+         * algún documento en particular
+         */
+        let estudianteEdad = 25;
+        let estudianteCargo = "Monitor"
 
-        if(edad > 18){
-            document.write("Presentar Cedula !");
-            console.log('ingreso cedula:', edad);
-        }else if(edad == 18){
-            document.write("Presentar contraseña !");
-            console.log('ingreso contraseña:', edad);
-        }else{
+        if(estudianteEdad == 18 && estudianteCargo == "Monitor"){
+            document.write("Presentar carnet !");
+        } else if(estudianteEdad > 18 || estudianteCargo == "Director"){
+            document.write("Presentar cedula !");
+        } else{
             document.write("No puede ingresar !");
-            console.log('no ingreso :', edad);
         }
+        
+        let flagNotVisible = true;
+
+        if (!flagNotVisible) {
+           // Se visualiza
+        } else {
+           // No se visualiza
+        }
+     
     </script>
 
 </body>
